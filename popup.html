@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+  <div class="logo-text">Crawl Budget Analyzer By Tuhin</div>
+</div>
+
+<div class="update-notice">
+  Google Search Update: 2MB Raw HTML Crawl Limit enforced as of February 2026
+</div>
+
+<div class="container">
+
+  <div id="loadingState">
+    <div class="card" style="text-align:center;">
+      <div class="progress-container">
+        <div class="swipe-bar"></div>
+      </div>
+      <div style="margin-top:10px;font-size:13px;color:var(--text-muted);">
+        Analyzing crawl Compatibility...
+      </div>
+    </div>
+  </div>
+
+  <div id="resultsState" style="display:none;">
+    <div class="card">
+      <div id="sizeDisplay" class="metric-value">--</div>
+      <div class="progress-container">
+        <div id="progressBar"></div>
+      </div>
+      <div id="statusText" style="text-align:center;font-weight:600;margin-top:10px;"></div>
+    </div>
+
+    <div class="card">
+      <table class="data-table">
+        <tr><td class="label-cell">Body Content (DOM)</td><td id="bodySize" class="value-cell">--</td></tr>
+        <tr><td class="label-cell">Metadata (&lt;head&gt;)</td><td id="headSize" class="value-cell">--</td></tr>
+        <tr><td class="label-cell">Inline Scripts (JS)</td><td id="scriptSize" class="value-cell">--</td></tr>
+        <tr><td class="label-cell">Inline Styles (CSS)</td><td id="styleSize" class="value-cell">--</td></tr>
+      </table>
+    </div>
+
+    <div id="actionAlert" class="alert"></div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Built by <strong>Tuhin Subhra Sikdar</strong><br>
+  <a href="https://www.linkedin.com/in/tuhin-subhra-sikdar/" target="_blank">LinkedIn</a> |
+  <a href="mailto:tuhinsubhrasikdar@gmail.com">tuhinsubhrasikdar@gmail.com</a>
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
