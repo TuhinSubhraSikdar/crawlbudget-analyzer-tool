@@ -1,24 +1,32 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+  "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 3,
-  "name": "Tuhin Subhra Sikdar Crawl Budget Analyzer ",
+  "name": "Tuhin Subhra Sikdar Crawl Budget Analyzer",
   "version": "1.0.0",
   "description": "SEO tool to measure raw HTML size vs Google’s 2MB crawl limit. Detect DOM, JS & CSS bloat with clear technical optimization fixes.",
   "author": "Tuhin Subhra Sikdar",
+
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
   },
+
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
+
   "permissions": [
     "activeTab",
     "scripting",
     "storage"
   ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
   "offline_enabled": true
 }
